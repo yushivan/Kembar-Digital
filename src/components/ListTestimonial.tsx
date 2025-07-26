@@ -28,8 +28,8 @@ export function ListTestimonial(params: any) {
                         }}
                     >
                         {params.blok.testimonials?.map((testimonial: any) => (
-                            <SwiperSlide>
-                                <TestimonialCard key={testimonial.uuid} testimonial={testimonial} />
+                            <SwiperSlide key={testimonial.uuid}>
+                                <TestimonialCard testimonial={testimonial} />
                             </SwiperSlide>
                         ))}
                     </Swiper>
