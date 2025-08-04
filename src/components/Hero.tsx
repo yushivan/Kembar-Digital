@@ -9,6 +9,8 @@ interface HeroProps {
 }
 
 export const Hero = ({ blok }: HeroProps) => {
+  if (!blok) return null;
+  
   return (
     <div className="w-full h-[50vh] relative">
       <img
