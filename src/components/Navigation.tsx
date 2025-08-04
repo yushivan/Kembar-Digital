@@ -8,6 +8,7 @@ import {
 } from "flowbite-react";
 
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 export function Navigation() {
     return (
@@ -22,9 +23,11 @@ export function Navigation() {
             </NavbarBrand>
             <div className="flex md:order-2 gap-3 items-center">
                 <Link href="/" className="hidden lg:block me-3 py-2 px-2 text-gray-700 hover:text-[#1E61D9]">Log in</Link>
-                <Link href="/" target="_blank" className="hidden lg:block bg-[#1E61D9] font-medium text-white hover:bg-black px-5 py-2 transition-all duration-300 rounded-full">
-                    Sign up
-                </Link>
+                <Button className="hidden lg:block bg-[#1E61D9] font-medium text-white hover:bg-black px-5 py-2 transition-all duration-300 rounded-full" asChild>
+                    <Link href="/" target="_blank" >
+                        Sign up
+                    </Link>
+                </Button>
                 <NavbarToggle />
             </div>
             <NavbarCollapse>
