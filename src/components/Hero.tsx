@@ -26,3 +26,5 @@ export const Hero = ({ blok }: HeroProps) => {
     </div>
   );
 };
+
+export default Hero;
