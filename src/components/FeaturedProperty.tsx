@@ -2,7 +2,25 @@ import { formatRupiah } from "@/utils/formatter";
 import { StoryblokRichText } from "@storyblok/react";
 import Link from "next/link";
 
-export function FeaturedProperty(params:any) {
+export interface FeaturedPropertyProps {
+  blok: {
+    headline: string;
+    properties: {
+        content: {
+            images: {
+                filename: string;
+                alt: string;
+            };
+            name: string;
+            description: any;
+            cta_link: string;
+            price: number;
+        }
+    };
+  };
+}
+
+export function FeaturedProperty(params:FeaturedPropertyProps) {
     return (
         <div className="py-10 px-5 lg:py-15 lg:px-40">
             <div className="grid grid-cols-2 gap-5 lg:gap-10 items-center">
