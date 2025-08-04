@@ -5,7 +5,7 @@ export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const slug = searchParams.get("slug") || "/";
 
-  const redirectUrl = new URL(slug, req.nextUrl.origin); 
+  const redirectUrl = new URL(slug, req.nextUrl.origin); // ✅ ini kuncinya
 
   (await draftMode()).enable();
   return NextResponse.redirect(redirectUrl);
