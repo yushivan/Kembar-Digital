@@ -20,7 +20,7 @@ export interface FeaturedPropertyInterface {
   };
 }
 
-export function FeaturedProperty(params:FeaturedPropertyInterface) {
+export function FeaturedProperty(params:any) {
     return (
         <div className="py-10 px-5 lg:py-15 lg:px-40">
             <div className="grid grid-cols-2 gap-5 lg:gap-10 items-center">

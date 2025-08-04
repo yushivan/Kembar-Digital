@@ -8,7 +8,7 @@ export interface HeroInterface {
   };
 }
 
-export const Hero = (params:HeroInterface) => {
+export const Hero = (params:any) => {
     return (
         <div className="w-full h-[50vh] relative">
             <img src={params.blok.image.filename} alt={params.blok.image.alt} className="w-full h-full object-cover" />
