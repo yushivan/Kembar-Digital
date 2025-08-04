@@ -15,7 +15,7 @@ import { ListArticle } from "@/components/ListArticle";
 import { ListFeature } from "@/components/ListFeature";
 
 storyblokInit({
-  accessToken: "pWF9YDx1xWCY4yUpOFwimgtt",
+  accessToken: process.env.STORYBLOK_TOKEN,
   use: [apiPlugin],
   components: {
     page: Page,

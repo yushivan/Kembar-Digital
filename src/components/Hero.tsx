@@ -1,4 +1,14 @@
-export const Hero = (params:any) => {
+export interface HeroInterface {
+  blok: {
+    image: {
+      filename: string;
+      alt: string;
+    };
+    title: string;
+  };
+}
+
+export const Hero = (params:HeroInterface) => {
     return (
         <div className="w-full h-[50vh] relative">
             <img src={params.blok.image.filename} alt={params.blok.image.alt} className="w-full h-full object-cover" />
