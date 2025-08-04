@@ -2,24 +2,6 @@ import { formatRupiah } from "@/utils/formatter";
 import { StoryblokRichText } from "@storyblok/react";
 import Link from "next/link";
 
-export interface FeaturedPropertyInterface {
-  blok: {
-    headline: string;
-    properties: {
-        content: {
-            images: {
-                filename: string;
-                alt: string;
-            };
-            name: string;
-            description: any;
-            cta_link: string;
-            price: number;
-        }
-    };
-  };
-}
-
 export function FeaturedProperty(params:any) {
     return (
         <div className="py-10 px-5 lg:py-15 lg:px-40">

@@ -1,13 +1,3 @@
-export interface HeroInterface {
-  blok: {
-    image: {
-      filename: string;
-      alt: string;
-    };
-    title: string;
-  };
-}
-
 export const Hero = (params:any) => {
     return (
         <div className="w-full h-[50vh] relative">
